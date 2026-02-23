@@ -6,6 +6,17 @@
     <title>Laudry Project</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "WqALCXd16gzeZaHJ1",
+      });
+   })();
+</script>
    
   </head>
   <body>
@@ -182,7 +193,7 @@
             <input type="email" id="email" placeholder="Email" required />
             <input type="tel" id="phone" placeholder="Phone Number" required />
 
-            <button type="click" class="btn-book" id="bookNow">Book Now</button>
+            <button  class="btn-book" id="bookNow" onclick="sendMail()">Book Now</button>
             <p
             id="successMessage"
             style="display: none; color: green; margin-top: 10px"
@@ -243,9 +254,7 @@
           <p>
             To charge for laundry service, determine your costs (supplies,
             utilities, labor, overhead) and market rates, then structure pricing
-            by weight (per pound/kg), per item, or per bag/load, adding
-            upcharges for premium services like ironing, express service, or
-            special fabrics.
+            by weight (per pound/kg).
           </p>
         </div>
       </div>
@@ -307,19 +316,8 @@
         </div>
       </div>
     </section>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-  (function () {
-    emailjs.init("YOUR_PUBLIC_KEY");
-  })();
-</script>
-
-
+   
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

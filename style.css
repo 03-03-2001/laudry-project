@@ -162,6 +162,7 @@ h3 {
 .remove {
   background: red;
   color: #fff;
+  display: none;
 }
 .remove:hover {
   background-color: aqua;
@@ -230,7 +231,7 @@ p {
 
 .section-newsletter {
   margin-top: 20px;
-  background-color: lightblue;
+  background-color: skyblue;
 }
 
 .newsletter {
@@ -271,7 +272,7 @@ margin-top: 15px;
 }
 
 .footer{
-  background-color: #ccc;
+  background-color: whitesmoke;
   min-height: auto;
 
 }
